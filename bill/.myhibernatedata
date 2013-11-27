@@ -1,0 +1,24 @@
+#MyEclipse Hibernate Properties
+#Tue Jun 12 23:30:58 CST 2012
+sessionFactoryName=com.rosy.bill.HibernateSessionFactory
+genBasicCompId=true
+profile=
+daoSFId=
+version=3.3
+jndiPath=
+detectM2M=false
+reStrategyClass=
+detectO2O=false
+springDaoFile=
+useJavaTypes=false
+keyGenerator=assigned
+libInstallFolder=WebRoot/WEB-INF/lib
+addLibs2Project=true
+genVersionTag=false
+sessionFactoryId=
+basePersistenceClass=AuditableEntity
+genAnnotations=true
+reSettingsFile=/bill/hibernate.reveng.xml
+configFile=/bill/src/hibernate.cfg.xml
+createConfigFile=true
+addLibs2Classpath=true

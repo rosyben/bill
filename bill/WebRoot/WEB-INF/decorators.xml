@@ -1,0 +1,17 @@
+<decorators defaultdir="/decorators">
+    <!-- 默认的样式 -->
+	<decorator name="default" page="default.jsp">
+		<pattern>/*</pattern>
+	</decorator>
+	
+	<!-- 不考虑过滤的 -->
+	<excludes>
+		<pattern>/resources/*</pattern>
+		<pattern>/My97DatePicker/*</pattern>
+        <pattern>/dwz/*</pattern>
+		<pattern>/*.html*</pattern>
+		
+		<pattern>/common/*</pattern>
+	</excludes>
+
+</decorators>
