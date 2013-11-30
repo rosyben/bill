@@ -46,7 +46,7 @@ public class ReceiveRecordAction extends CrudActionSupport<ReceiveRecord> {
 
 	private ReceiveRecord receiveRecord;
 	
-	private ReceiveRecord condition;
+	private ReceiveRecord condition;  
 	
 	private CertificateService certificateService;
 
@@ -66,7 +66,6 @@ public class ReceiveRecordAction extends CrudActionSupport<ReceiveRecord> {
 
 	@Override
 	public String input() throws Exception {
-		// TODO Auto-generated method stub
 		return null;
 	}
 
