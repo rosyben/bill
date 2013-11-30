@@ -16,7 +16,7 @@ import org.apache.struts2.convention.annotation.Results;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Scope;
 
-import com.ruanko.sdb2b.Constants;
+import com.rosy.bill.Constants;
 import com.ruanko.sdb2b.dao.Page;
 import com.ruanko.sdb2b.entity.system.AppOrganization;
 import com.ruanko.sdb2b.service.system.AppOrganizationManager;
