@@ -40,7 +40,7 @@ import com.rosy.bill.utils.web.Struts2Utils;
  * 使用Struts2 convention-plugin annotation定义Action参数.
  * 演示带分页的管理界面.
  * 
- * @author calvin
+ * @author calvin 
  */
 //定义URL映射对应/dwz/main.action
 @Namespace("/ess")
