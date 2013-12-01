@@ -21,6 +21,9 @@ import java.io.InputStreamReader;
 import java.io.PrintWriter;
 import java.net.ServerSocket;
 import java.net.Socket;
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.LinkedList;
@@ -177,7 +180,23 @@ public class Server extends ServerSocket {
 	}
 
 	public static void main(String[] args) throws IOException {
-		new Server();
+
+		String url="JDBC:jtds:sqlserver://localhost:1433/master"; 
+		String driver="net.sourceforge.jtds.jdbc.Driver"; 
+		try {
+		Class.forName(driver); 
+		Connection conn=DriverManager.getConnection(url,"sa","System_sa_20111212");
+		if (conn.isClosed()== true) 
+		  System.out.println("SomeThing goes wrong");
+		} catch (ClassNotFoundException e) {
+		// TODO Auto-generated catch block
+		System.out.println("SomeThing  wrong");
+		System.out.println(e);
+		//e.printStackTrace();
+		} catch (SQLException e) {
+		// TODO Auto-generated catch block
+		e.printStackTrace();
+		} 
 	}
 
 }
